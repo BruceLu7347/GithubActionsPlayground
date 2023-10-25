@@ -1,0 +1,31 @@
+# https://github.com/marketplace/actions/add-to-github-projects
+
+name: Assign issues to projects
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/add-to-project@RELEASE_VERSION
+          with:
+            # You can target a project in a different organization
+            # to the issue
+            project-url: https://github.com/users/brucelu7347/projects/1
+            github-token: ${{ secrets.GHPROJECT_TOKEN }}
+            labeled: V1.0.0
+            label-operator: OR
+        
+        - uses: actions/add-to-project@RELEASE_VERSION
+            with:
+              # You can target a project in a different organization
+              # to the issue
+              project-url: https://github.com/users/brucelu7347/projects/2
+              github-token: ${{ secrets.GHPROJECT_TOKEN }}
+              labeled: V1.0.1
+              label-operator: OR

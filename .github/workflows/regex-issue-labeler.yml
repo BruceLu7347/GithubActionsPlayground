@@ -1,4 +1,7 @@
+# https://github.com/github/issue-labeler
+
 name: "Issue Labeler"
+
 on:
   issues:
     types: [opened, edited]
