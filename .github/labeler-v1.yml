@@ -6,13 +6,13 @@ V5.1.2:
   - '\[V5.1.2\]'
 
 # Issue Type
-バグ :bug: 
+バグ :bug:: 
   - 'タイプ(: |：)バグ'
 
-仕様変更 :memo:
+仕様変更 :memo::
   - 'タイプ(: |：)仕様変更'
 
-Todo :page_facing_up:
+Todo :page_facing_up::
   - 'タイプ(: |：)TODO/i'
 
 # Rank
@@ -27,3 +27,4 @@ Rank C:
 
 Rank D:
   - 'ランク(: |：)D'
+
