@@ -20,5 +20,5 @@ jobs:
         sync-labels: 1 # By default, labels that no longer match are not removed from the issue. To enable this functionality, explicity set sync-labels to 1.
         enable-versioned-regex: 1
         versioned-regex: 'issue_labeler_regex_version=(\d+)'
-        body-missing-regex-label: 'broken-template'
+        # body-missing-regex-label: 'broken-template'
         repo-token: ${{ github.token }}
